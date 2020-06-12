@@ -3,7 +3,6 @@ import { render, fireEvent, cleanup } from '@testing-library/react';
 import TechList from '~/components/TechList';
 
 describe('TechList Component', () => {
-  afterEach(async () => await cleanup());
   beforeEach(() => localStorage.clear());
 
   it('should be able to add new tech', () => {
